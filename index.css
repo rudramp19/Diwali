@@ -1,0 +1,94 @@
+/* Basic styling for the page */
+body, html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Login Form Styling */
+.login-container {
+  text-align: center;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#login-form input, #login-form button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#login-form button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#error-message {
+  color: red;
+}
+
+/* Main Content Styling */
+.container {
+  text-align: center;
+}
+
+/* Button styling */
+.animate-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.animate-button:hover {
+  transform: scale(1.05);
+}
+
+/* Happy Diwali message styling */
+.diwali-message {
+  font-size: 2rem;
+  color: #ffeb3b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b, 0 0 30px #ffeb3b;
+}
+
+/* Cracker animation styling */
+.cracker {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffeb3b;
+  border-radius: 50%;
+  animation: explode 1s ease-out forwards;
+  pointer-events: none;
+}
+
+/* Explosion animation */
+@keyframes explode {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(4); }
+}
+
+  
